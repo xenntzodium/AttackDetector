@@ -224,7 +224,6 @@ sudo systemctl status suricata # Servis durum kontrolü
 Çıktı aşağıdaki gibi olmalıdır.
 
 ![Servis%20Başlatması.png](/images/Servis%20Başlatması.png)
-<img src="images/Servis Başlatması.png" alt="Servis Başlatması" width="500">
 
 ###### NOT!
 
