@@ -1,4 +1,4 @@
-![Project Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Project Status](https://img.shields.io/badge/Status-Ongoing-blue)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)
 ![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
