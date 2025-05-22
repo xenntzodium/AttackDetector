@@ -1,0 +1,30 @@
+alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1;)
+alert tcp any any -> $HOME_NET any (msg:"PROJE TEST2: Nmap SYN Tarama Tespit Edildi"; flags:S; sid:2000002; rev:1;)
+
+
+
+
+
+
+
+
+
+
+
+
+# Varsayılan kural öne çekildiği için bizim attığımız kural tanınamıyor. Özel mesaj yoluyla da sonuca ulaşamadık.
+
+# alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: Ozel Mesajli ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1; content:"ozel_mesaj"; nocase; depth:10; ) 
+
+# Her icmp_seq için 1 uyarı istiyorum.
+
+# alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1; threshold: type limit, track by_src, count 1, seconds 1;) # Sonuca ulaşamadık
+
+# alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: Her ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1; threshold: type threshold, track by_pkt, count 1, seconds 0;) # Sonuca ulaşamadık
+
+# alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: Her ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1; threshold: type limit, track by_src, count 1, seconds 1;) # Sonuca ulaşamadık
+
+# ----TCP-----
+
+# alert tcp any any -> $HOME_NET any (msg:"PROJE TEST: Nmap SYN Tarama Tespit Edildi"; flags:S; sid:2000002; rev:1;) # Sonuca ulaşıldı.
+
