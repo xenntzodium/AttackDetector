@@ -246,6 +246,22 @@ K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde 
 ###### 4.1.2. `suricata.yaml` Dosyası Ayarları
 
 `suricata.yaml` -> Suricata'nın konfigürasyon dosyası. Burada ağ ortamımıza göre özel ayarlamalar yapabiliyoruz. En kritik düzenlemelerden biri, ağ değişkenlerini tanımlamak.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+Önce `ip a` komutu ile hangi ip bloğunu kullanacağımızı öğrenmeliyiz. Bunu öğrenirken bir de iki bilgisayarın haberleşip haberleşemediğini test edelim.
+
+- Kali makinemizin terminaline ve mint makinemizin terminaline `ip a` komutunu girerek ip adreslerini öğrenebiliriz.
+- Kali makinemizin ip adresi: 192.168.122.153 
+- Mint: 192.168.122.165
+- Şimdi Kali makinemizin terminaline `ping 192.168.122.165` yazıp mint makinemize ping gönderebiliyor muyuz test edelim.
+- Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
+
+![iletisimkontrol](/images/iletisimkontrol.gif)
+
+
+>>>>>>> fbecdc15fb13a3ae9d52c0204616a4a721fca80e
 
 Dosyayı açtığımız da ilk olarak Suricata'nın takip edeceği IP bloğunu Suricata'ya belirtiyoruz.
 
@@ -259,6 +275,7 @@ vars:
 		# Biz temel düzeyde gittiğimiz için burada bir değişiklik yapmadık.
 ```
 
+<<<<<<< HEAD
 ###### NOT!
 **İzlenecek Arayüz:** Projemizde `enp1s0` arayüzü seçilmiştir. `ip a` komutunu yazarak kendi arayüzünüzü öğrenebilirsiniz.
 
@@ -594,3 +611,5 @@ Projenin sadece IDS odaklı ve Suricata yaklaşımının sebebi, olabildiğince 
 #### Ekler (Ekran Görüntüleri, Konfigürasyon Dosyaları vb.)
 
 ![Suricata Mimarisi.canvas](/Dökümantasyon/Suricata%20Mimarisi.canvas)
+=======
+>>>>>>> fbecdc15fb13a3ae9d52c0204616a4a721fca80e
