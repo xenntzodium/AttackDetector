@@ -83,19 +83,19 @@ Bu kısımda bilmemiz gerekenler sırasıyla;
 
 ##### 2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/IDS%20ve%20IPS%20Nedir%3F.md)
 
 ##### 2.2. Snort Mimarisi
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Snort%20Mimarisi.md)
 
 ##### 2.3. Suricata Mimarisi
 
 DİKKAT: Suricata mimarisini aşağıdaki canvas üzerinde daha detaylı incelemek için, dosyayı indirip obsidian üzerinden görüntüleyebilirsiniz. 
 
-![[Pasted image 20250521234847.png]]
+![Suricata-Canvas](/images/Pasted%20image%2020250521234847.png)
 
-Dosyayı şu sayfadan sağda bulunan indirme kısmından indirebilirsiniz.
+[Dosyayı şu sayfadan sağda bulunan indirme kısmından indirebilirsiniz.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Suricata%20Mimarisi.canvas)
 
 Suricata'yı güçlü kılan bazı temel özellikler şunlardır:
 
@@ -108,7 +108,7 @@ Suricata'yı güçlü kılan bazı temel özellikler şunlardır:
 
 ##### 2.3. Saldırı Senaryoları ve Nmap
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Sald%C4%B1r%C4%B1%20Senaryolar%C4%B1%20-%20NMAP.md)
 
 NOT: Bu bölümde açıklanan kavramlar ve araçlar, projemizin ilerleyen adımlarında Suricata üzerinde geliştirilen kuralların ve gerçekleştirilen saldırı simülasyonlarının temelini oluşturmuştur. Tabiki konular bunlarla sınırlı değil, daha öğrenmemiz gereken çok şey var. Fakat şimdilik yukarıdaki bilgilerin kafamızda bir şeyler canlandırması yeterli. 
 
@@ -170,7 +170,7 @@ Kurulu yazılımlar:
 
 ##### 3.2. Ağ Topolojisi 
 
-![[Ağ Topolojisi.png]]
+![Ağ%20Topolojisi.png](/images/Ağ%20Topolojisi.png)
 
 ##### 3.3. Kullanılan Yazılımlar ve Versiyonları
 
@@ -223,28 +223,30 @@ sudo systemctl status suricata # Servis durum kontrolü
 
 Çıktı aşağıdaki gibi olmalıdır.
 
-![[Servis Başlatması.png]]
+![Servis%20Başlatması.png](/images/Servis%20Başlatması.png)
 
 ###### NOT!
 
 Bazı durumlar da aşağıdaki gibi `sudo systemctl enable suricata` `suricata.service is not a native service, redirecting to systemd-sysv-install.` şeklinde bir çıktı verdiğini görürüz. 
 
-![[executingsystemd.png]]
+![executingsystemd.png](/images/executingsystemd.png)
 
 Hata değildir, yalnızca `systemctl enable suricata` komutunun `/usr/lib/systemd/systemd-sysv-install enable suricata` komutuna yönlendirildiğini söylüyor. Suricata bazı dağıtımlarda (genelde debian sistemlerinde) native `systemd` servisi olarak değil eski yöntem olan `/etc/init.d/suricata` yoluyla çalışıyor. Yani aslında enable komutu başarılı olmuştur.
 
 Böyle bir durumda `sudo systemctl status suricata` komutu bize enable döndürmeyecektir. 
 
-![[enablepr.png]]
+![enablepr.png](/images/enablepr.png)
 
 `enable` durumundan şüphe ederseniz şu komutu çalıştırarak durumu kontrol edebilirsiniz: `ls /etc/rc*.d | grep suricata`
 
-![[kssuricata.png]]
+![kssuricata.png](/images/kssuricata.png)
+
 K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde çalışır. Türkçesi bu.) Yani enable olmuş. Güzel.
 
 ###### 4.1.2. `suricata.yaml` Dosyası Ayarları
 
 `suricata.yaml` -> Suricata'nın konfigürasyon dosyası. Burada ağ ortamımıza göre özel ayarlamalar yapabiliyoruz. En kritik düzenlemelerden biri, ağ değişkenlerini tanımlamak.
+<<<<<<< HEAD
 
 Önce `ip a` komutu ile hangi ip bloğunu kullanacağımızı öğrenmeliyiz. Bunu öğrenirken bir de iki bilgisayarın haberleşip haberleşemediğini test edelim.
 
@@ -272,3 +274,5 @@ vars:
 
 
 
+=======
+>>>>>>> 2485daf65cb7f63e864e7ccc58a26e84302f4890
