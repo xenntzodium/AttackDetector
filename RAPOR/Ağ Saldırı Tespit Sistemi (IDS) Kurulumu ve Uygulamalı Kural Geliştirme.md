@@ -1,7 +1,6 @@
 ### **İçindekiler**
-1. [Giriş](#1-gi̇ri̇ş)
-
-1.1. [Projenin Amacı](#11-projenin-amacı)
+- 1. [Giriş](#1-gi̇ri̇ş)
+	- 1.1. [Projenin Amacı](#11-projenin-amacı)
 
 1.2 [Projenin Önemi](12-projenin-önemi)
 2. [Arka Plan ve Temel Kavramlar](#2-arkaplan-ve-temel-kavramlar)
