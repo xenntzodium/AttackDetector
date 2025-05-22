@@ -1,58 +1,57 @@
 ### **İçindekiler**
 
-- [x] Giriş. 
-	- [x] 1.1  Projenin Amacı 
-	- [x] 1.2 Projenin Önemi
-- [x] Arka Plan ve Temel Kavramlar 
-	- [x] 2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir? 
-	- [x] 2.2. Snort Mimarisi
-	- [x] 2.3. Suricata Mimarisi 
-	- [x] 2.4. Saldırı Senaryoları ve Nmap
-- [x] Proje Ortamı ve Kullanılan Araçlar 
-	- [x] 3.1. Sanal Makine Konfigürasyonu 
-		- [x] 3.1.1. Mint Linux (Hedef/IDS Makinesi) 
-		- [x] 3.1.2. Kali Linux (Saldırgan Makinesi) 
-	- [x] 3.2. Ağ Topolojisi 
-	- [x] 3.3. Kullanılan Yazılımlar ve Versiyonları
-- [x] Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
-	- [x] 4.0. Makinelerin haberleşme kontrolü
-	- [x] 4.1. Suricata Kurulumu ve Temel Konfigürasyon 
-		- [x] 4.1.1. Kurulum Süreci 
-		- [x] 4.1.2. `suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)
-		- [x] 4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü) 
-	- [x] 4.2. Özel Kural Geliştirme ve Testler 
-		- [x] 4.2.1. ICMP (Ping) Tespit Kuralı 
-			- [x] 4.2.1.1. Kuralın Tanımı ve Amacı 
-			- [x] 4.2.1.2. Uygulama ve Test Süreci 
-			- [x] 4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
-		- [x] 4.2.2. Nmap SYN Port Tarama Tespit Kuralı 
-			- [x] 4.2.2.1. Kuralın Tanımı ve Amacı (Neden İç Ağ Taraması Önemli?) 
-			- [x] 4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması) 
-			- [x] 4.2.2.3. Uygulama ve Test Süreci 
-			- [x] 4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları 
-- [x] Log Analizi ve Yorumlama 
-	- [x] 5.1. `fast.log` Analizi 
-- [x] Sonuç ve Proje Kazanımları 
-	- [x] 6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler 
-	- [x] 6.2. Projenin Başarıları 
-	- [x] 6.3. Uygulamalı Öğrenmenin Önemi
-- [x] Gelecek Çalışmalar ve Geliştirme Önerileri 
-	- [x] 7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri) 
-	- [x] 7.2. IPS (Engelleme) Modu Araştırması
-- [x] Ekler (Ekran Görüntüleri, Konfigürasyon Dosyaları vb.)
+1. Giriş 
+	1.1  Projenin Amacı 
+	1.2 Projenin Önemi
+2. Arka Plan ve Temel Kavramlar 
+	2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir? 
+	2.2. Snort Mimarisi
+	2.3. Suricata Mimarisi 
+	2.4. Saldırı Senaryoları ve Nmap
+3. Proje Ortamı ve Kullanılan Araçlar 
+	3.1. Sanal Makine Konfigürasyonu 
+		3.1.1. Mint Linux (Hedef/IDS Makinesi) 
+		3.1.2. Kali Linux (Saldırgan Makinesi) 
+	3.2. Ağ Topolojisi 
+	3.3. Kullanılan Yazılımlar ve Versiyonları
+4. Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
+	4.0. Makinelerin haberleşme kontrolü
+	4.1. Suricata Kurulumu ve Temel Konfigürasyon 
+		4.1.1. Kurulum Süreci 
+		4.1.2. `suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)
+		4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü) 
+	4.2. Özel Kural Geliştirme ve Testler 
+		4.2.1. ICMP (Ping) Tespit Kuralı 
+			4.2.1.1. Kuralın Tanımı
+			4.2.1.2. Uygulama ve Test Süreci 
+			4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
+		4.2.2. Nmap SYN Port Tarama Tespit Kuralı 
+			4.2.2.1. Kuralın Tanımı
+			4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması) 
+			4.2.2.3. Uygulama ve Test Süreci 
+			4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları 
+5. Log Analizi ve Yorumlama 
+	5.1. `fast.log` Analizi 
+6. Sonuç ve Proje Kazanımları 
+	6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler 
+	6.2. Projenin Başarıları 
+	6.3. Uygulamalı Öğrenmenin Önemi
+7. Gelecek Çalışmalar ve Geliştirme Önerileri 
+	7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri) 
+	7.2. IPS (Engelleme) Modu Araştırması
 
 ---
-#### 1. GİRİŞ
+# 1. GİRİŞ
 
 Siber güvenlik dünyasında bireylere ve kuruluşlara gerçekleştirilen tehditleri tabiri caizse 'avlamak' için, başlıca savunma mekanizmalarımız haline gelen Saldırı Tespit Sistemlerini incelediğimiz bu raporda, IDS-IPS mantığını, Suricata ve Snort yazılımlarını incelemeye çalıştık. Bir çok konuda araştırma yaptık ve Temel Seviye de 'eğitim odaklı' bir yaklaşımla yaptığımız araştırmaların hepsini bir rapor haline getirdik. Bilgileri olabildiğince sindirilebilir ve öz vermeye çalıştık. Keyifli okumalar.
 
-##### 1.1 Projenin Amacı
+## 1.1 Projenin Amacı
 
 - Suricata ve Snort mimarilerini inceleyerek, arka planda nasıl çalıştıklarını anlamak
 - Uygulamalı bir yaklaşım ile IDS, IPS mantığını derinlemesine öğrenmek
 - Sanal bir laboratuvar oluşturup, aynı ağda bulunan iki bilgisayarın 'kurban', 'hacker' yaklaşımıyla simüle edilmesi
 - ...
-##### 1.2 Projenin Önemi
+## 1.2 Projenin Önemi
 
 Siber saldırıların karmaşıklığı göze alındığında IDS, IPS savunma mekanizmalarının güvenlik stratejilerinde ayrılmaz bir parça olduğunu söylemeye gerek yoktur sanırım.
 
@@ -63,7 +62,7 @@ Siber saldırıların karmaşıklığı göze alındığında IDS, IPS savunma m
 
 Bu yönleri ile projenin incelenmesinin, öğrencilere ve siber güvenlik alanına ilgi duyan bireylere kritik düşünme ve pratik uygulama becerileri kazandırarak, bu alanda gelecekteki kariyerleri için sağlam bir temel oluşturacağını düşünüyorum.
 
-#### 2. ARKAPLAN VE TEMEL KAVRAMLAR
+# 2. ARKAPLAN VE TEMEL KAVRAMLAR
 
 İşin arkaplanına bakmamızın sebebi şu: Bilgiyi öğrenmek; google ya da çeşitli AI platformlarına sorup okumak kadar basit değil. Bu yüzden uygulamaya geçmeden önce bilmemiz gereken şeyleri kavramlara ayırarak, kafamızda bir zihin haritasına dönüştürmemiz gerekiyor ki, işin arka planında sistemin nasıl ilerlediğini bilelim. Bu yüzden dökümantasyon klasörümüze konular hakkında bilgiler toparladım. 
 
@@ -71,15 +70,15 @@ Projenin daha sıkıcı ve daha yoğun (ki gayet yoğun) olmaması için Snort k
 
 Bu kısımda bilmemiz gerekenler sırasıyla;
 
-##### 2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?
+## 2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?
 
 [Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/IDS%20ve%20IPS%20Nedir%3F.md)
 
-##### 2.2. Snort Mimarisi
+## 2.2. Snort Mimarisi
 
 [Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Snort%20Mimarisi.md)
 
-##### 2.3. Suricata Mimarisi
+## 2.3. Suricata Mimarisi
 
 DİKKAT: Suricata mimarisini aşağıdaki canvas üzerinde daha detaylı incelemek için, dosyayı indirip obsidian üzerinden görüntüleyebilirsiniz. 
 
@@ -96,7 +95,7 @@ Suricata'yı güçlü kılan bazı temel özellikler şunlardır:
 - **Çoklu Log Formatları:** Tespit edilen olayları `fast.log` (insan okunabilir özet) ve `eve.json` (makine tarafından işlenebilir detaylı JSON) gibi farklı formatlarda loglayabilir.
 - **IPS Yeteneği:** Hem IDS (sadece tespit) hem de IPS (tespit ve engelleme) modunda çalışabilir.
 
-##### 2.3. Saldırı Senaryoları ve Nmap
+## 2.4. Saldırı Senaryoları ve Nmap
 
 [Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Sald%C4%B1r%C4%B1%20Senaryolar%C4%B1%20-%20NMAP.md)
 
@@ -104,10 +103,10 @@ NOT: Bu bölümde açıklanan kavramlar ve araçlar, projemizin ilerleyen adıml
 
 ---
 
-#### 3. Proje Ortamı ve Kullanılan Araçlar
+# 3. Proje Ortamı ve Kullanılan Araçlar
 
 Projenin uygulanması ve test edilmesi için bir sanal ortam oluşturuldu. 
-##### 3.1. Sanal Makine Konfigürasyonu
+## 3.1. Sanal Makine Konfigürasyonu
 
 Proje, **QEMU/KVM (Kernel-based Virtual Machine)** sanallaştırma platformu üzerinde iki ayrı sanal makine kullanılarak gerçekleştirilmiştir. QEMU/KVM, Linux çekirdeğinin sanallaştırma yeteneklerinden faydalanan güçlü ve performansa dayalı bir sanallaştırma çözümüdür. Bu makineler, projenin güvenlik senaryolarını simüle etmek üzere belirli rollerle yapılandırılmıştır:
 
@@ -115,7 +114,7 @@ Sanal Makine Yöneticisi: QEMU/KVM
 - Sanal Bilgisayar 1: Kali Linux -> Saldırgan
 - Sanal Bilgisayar 2: Mint -> Hedef (Kurban)
 
-###### 3.1.1. Mint Linux (Hedef/IDS Makinesi)
+### 3.1.1. Mint Linux (Hedef/IDS Makinesi)
 
 **Rol:** IDS'i Mint Linux üzerine kuracağız. Makinenin diğer bir rolü ise saldırıların hedefi olması. Kısacası kurban bilgisayar.
 
@@ -137,7 +136,7 @@ Kurulu yazılımlar:
 - **Suricata**
 - **jq (JSON log analizi için)**
 
-##### **3.1.2. Kali Linux (Saldırgan Makinesi)**
+### **3.1.2. Kali Linux (Saldırgan Makinesi)**
 
 **Rol:** Saldırıyı gerçekleştireceğimiz saldırgan bilgisayar.
 
@@ -158,11 +157,11 @@ Kurulu yazılımlar:
 
 - Nmap (Ağ tarama ve keşif aracı)
 
-##### 3.2. Ağ Topolojisi 
+## 3.2. Ağ Topolojisi 
 
 ![Ağ%20Topolojisi.png](/images/Ağ%20Topolojisi.png)
 
-##### 3.3. Kullanılan Yazılımlar ve Versiyonları
+## 3.3. Kullanılan Yazılımlar ve Versiyonları
 
  **Sanal Makine Platformu:**
 
@@ -183,13 +182,13 @@ Kurulu yazılımlar:
 
 - **Nmap:** 7.95
 
-#### 4. Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
+# 4. Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
 
 Bu bolümde, projenin hedeflerine ulaşmak için adım adım gerçekleştirilen teknik çalışmalar ve uygulamalı adımlar detaylandırıldı. Suricata'nın kurulumundan özel kural geliştirme ve saldırı simülasyonlarına kadar olan süreç, karşılaşılan zorluklar ve elde edilen öğrenimlerle birlikte sunulmaktadır.
 
 Suricata IDS'in proje ortamına entegrasyonu, sistemin temel yapılandırmasıyla başlamıştır.
 
-##### 4.0. Makinelerin haberleşme kontrolü
+## 4.0. Makinelerin haberleşme kontrolü
 
 Önce `ip a` komutu ile hangi ip bloğunu kullanacağımızı öğrenmeliyiz. Bunu öğrenirken bir de iki bilgisayarın haberleşip haberleşemediğini test edelim.
 
@@ -200,11 +199,11 @@ Suricata IDS'in proje ortamına entegrasyonu, sistemin temel yapılandırmasıyl
 - Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
 
 ![[iletisimkontrol.gif]]
-##### 4.1. Suricata Kurulumu ve Temel Konfigürasyon
+## 4.1. Suricata Kurulumu ve Temel Konfigürasyon
 
 Suricata IDS'in proje ortamına entegrasyonu, sistemin temel yapılandırmasıyla başlamıştır.
 
-###### 4.1.1. Kurulum Süreci
+### 4.1.1. Kurulum Süreci
 
 Mint Linux (Hedef/IDS makinesi) üzerinde Suricata'nın kurulumu, dağıtımın paket yöneticisi aracılığıyla gerçekleştirilmiştir. Kurulumun ardından, Suricata servisinin başlatılması ve otomatik başlatma ayarları yapılmıştır.
 
@@ -243,12 +242,9 @@ Böyle bir durumda `sudo systemctl status suricata` komutu bize enable döndürm
 ![kssuricata.png](/images/kssuricata.png)
 
 K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde çalışır. Türkçesi bu.) Yani enable olmuş. Güzel.
-###### 4.1.2. `suricata.yaml` Dosyası Ayarları
+### 4.1.2. `suricata.yaml` Dosyası Ayarları
 
 `suricata.yaml` -> Suricata'nın konfigürasyon dosyası. Burada ağ ortamımıza göre özel ayarlamalar yapabiliyoruz. En kritik düzenlemelerden biri, ağ değişkenlerini tanımlamak.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
 Önce `ip a` komutu ile hangi ip bloğunu kullanacağımızı öğrenmeliyiz. Bunu öğrenirken bir de iki bilgisayarın haberleşip haberleşemediğini test edelim.
 
@@ -259,9 +255,6 @@ K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde 
 - Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
 
 ![iletisimkontrol](/images/iletisimkontrol.gif)
-
-
->>>>>>> fbecdc15fb13a3ae9d52c0204616a4a721fca80e
 
 Dosyayı açtığımız da ilk olarak Suricata'nın takip edeceği IP bloğunu Suricata'ya belirtiyoruz.
 
@@ -274,12 +267,10 @@ vars:
 		# 0.0.0.0 - 255.255.255.255 -> Yani tüm ip adresleri
 		# Biz temel düzeyde gittiğimiz için burada bir değişiklik yapmadık.
 ```
-
-<<<<<<< HEAD
 ###### NOT!
 **İzlenecek Arayüz:** Projemizde `enp1s0` arayüzü seçilmiştir. `ip a` komutunu yazarak kendi arayüzünüzü öğrenebilirsiniz.
 
-###### 4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü)
+### 4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü)
 
 Servisi tekrar başlatma, başlatma, durdurma, kontrol etme ve suricata.yaml konfigürasyonlarında bir hata olup olmadığını görmek için iki grup altında 5 adet kod bilmeliyiz.
 
@@ -305,13 +296,13 @@ NOT!
 
 Bu komutun çıktısı, konfigürasyon dosyasında genel bir hata olmadığını göstermiştir. Ancak, kural dosyalarındaki daha derin sözdizimi hatalarının bu aşamada her zaman açıkça belirtilmediği, ileri aşamalardaki deneyimlerle anlaşılmıştır.
 
-#### 4.2. Özel Kural Geliştirme ve Testler
+## 4.2. Özel Kural Geliştirme ve Testler
 
 Projemizin en önemli adımlarından biri, belirli saldırı senaryolarını tespit etmek üzere Suricata için özel kurallar (signatures) yazmak ve bu kuralları canlı ağ trafiği üzerinde test etmektir. Bu süreç, Suricata'nın kural dili (`Suricata Rule Language - SRL`) hakkında derinlemesine bilgi edinmemizi sağlamıştır.
 
 Şimdi herşeyimiz hazır. Ortamı kurduk. Konfigürasyonları ayarladık. Servisleri ayarladık sıra geldi Suricata'nın amacını gerçekleştirmeye.
 
-##### 4.2.1. ICMP (Ping) Tespit Kuralı
+### 4.2.1. ICMP (Ping) Tespit Kuralı
 
 KURAL TANIMI: İlk önce basit bir ping kuralı ile yazdığımız kuralların çalışıyor olup olmadığını test etmek, gelecekte yazdığımız kurallar için bir önayak olacaktı. Bu yüzden ilk önce basit bir ICMP kuralı yazarak, Kali makinesinden Mint makinemize atılan bir ping'i tespit etmeye çalıştık. 
 
@@ -319,6 +310,7 @@ KURAL TANIMI: İlk önce basit bir ping kuralı ile yazdığımız kuralların �
 
 NOT: Bu kısımda aslında önce rules klasörü yoktu. Çünkü Suricata varsayılan kuralları kullanıyordu. Fakat biz kendi kurallarımızı yazacağımız için bir Rules klasörü oluşturduk. İçerisine `local.rules` adında bir dosya oluşturduk. Artık oluşturduğumuz kuralları buraya yazacağız.  
 
+#### 4.2.1.1. Kuralın Tanımı
 SYNTAX;
 
 ```plaintext
@@ -339,7 +331,7 @@ alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: ICMP Echo Request Tespit E
 - `sid:2000001` → Bu kuralın **benzersiz kimliğidir**. Suricata her kurala bir "Signature ID" verir. 1.000.000 ve üzeri SID'ler kullanıcı tanımlı özel kurallar içindir.
 - `rev:1` → Bu kuralın **ilk sürümüdür**. Kurala ileride bir güncelleme yapılırsa `rev` numarası artırılır (örneğin `rev:2` olur).
 
-###### 4.2.1.2. Uygulama ve Test Süreci 
+#### 4.2.1.2. Uygulama ve Test Süreci 
 
 Şimdi gelelim uygulama kısmımıza. 
 
@@ -392,7 +384,7 @@ AÇIKLAMA
 
 - İlk testlerde, sürekli ping atılmasına rağmen Suricata'nın her bir ping paketi için uyarı üretmediği, aksine belirli bir süre boyunca yalnızca ilk uyarıyı kaydettiği fark edilmiştir. Bu durum, Suricata'nın aşırı log şişkinliğini önlemek amacıyla varsayılan olarak aktif olan "uyarı bastırma" (alert suppression) mekanizmasından kaynaklanmaktadır. Bu davranışın anlaşılması, IDS'lerin sadece tehditleri algılamakla kalmayıp, aynı zamanda üretilen logların yönetilebilirliğini de göz önünde bulundurduğunu göstermiştir. Her pakette uyarı almak için `threshold` gibi anahtar kelimelerin kullanılması gerektiği, ancak bu konudaki ilk denemelerin kural sözdizimi hataları nedeniyle zorluklar çıkardığı gözlemlenmiştir. Bu süreç, Suricata kural dilinin hassas yapısını ve detaylara dikkat etmenin önemini kavramamızı sağlamıştır.
 
-###### 4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
+#### 4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
 
 ```plaintext
 05/22/2025-16:41:27.196216  [**] [1:2000001:1] PROJE TEST: ICMP Echo Request Tespit Edildi [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.122.165:0 -> 192.168.122.153:0
@@ -409,7 +401,7 @@ Güzel. Şimdi testimizi bitirdik. Fakat kimse bir ping için bu kuralı görmek
 
 Şimdi bir saldırı senaryosu oluşturmamız gerek. 
 
-##### 4.2.2. Nmap SYN Port Tarama Tespit Kuralı
+### 4.2.2. Nmap SYN Port Tarama Tespit Kuralı
 
 KURAL TANIMI VE AMACI: Basit şekilde anlatacak olursak, 100 bilgisayarlı bir şirkette çalıştığımızı varsayalım. Bir saldırgan ağımıza erişti. Ağımızda yapacağı ilk tehlikeli faaliyetlerden biri nmap sorgusu ile açık port taraması yapmaktır diyebiliriz. nmap ile daha neler yapılabileceğini [bu kısımda konuşmuştuk.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Sald%C4%B1r%C4%B1%20Senaryolar%C4%B1%20-%20NMAP.md) Daha detaylı bilgi için nmap dökümantasyonlarına [buradan ulaşabilirsiniz.](https://nmap.org/docs.html)
 
@@ -437,7 +429,7 @@ alert tcp any any -> $HOME_NET any (msg:"PROJE TEST2: Nmap SYN Tarama Tespit Edi
 - `sid:2000002` → Bu kuralın **benzersiz kimliğidir**. Suricata her kurala bir "Signature ID" verir. 1.000.000 ve üzeri SID’ler kullanıcı tanımlı özel kurallar içindir.
 - `rev:1` → Bu kuralın **ilk sürümüdür**. Kurala ileride bir güncelleme yapılırsa `rev` numarası artırılır (örneğin `rev:2` olur).
 
-###### 4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması)
+#### 4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması)
 
 Saldırgan makinesi Kali Linux (IP: 192.168.122.153) üzerinden hedef makine Mint Linux (IP: 192.168.122.165) adresine yönelik bir SYN port taraması başlatılmıştır. 
 
@@ -451,7 +443,7 @@ sudo nmap -sS -p 1-1000 192.168.122.165
 
 Bu komutu kali makinemiz de kullanacağız. Cebimizde kalsın.
 
-# 4.2.2.3. Uygulama ve Test Süreci 
+#### 4.2.2.3. Uygulama ve Test Süreci 
 
 Şimdi tekrardan bir kural tanımlamamız gerekiyor. Bunu terminale yapıştırıp direk işimizi kolaylaştıralım. 
 
@@ -482,7 +474,7 @@ Aşağıdaki gibi bir sonuç beklenmektedir.
 
 ![test-3.mp4](/images/test-3.mp4)
 
-###### 4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları
+#### 4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları
 
 ```plaintext
 05/22/2025-17:46:22.778336  [**] [1:2000002:1] PROJE TEST2: Nmap SYN Tarama Tespit Edildi [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.122.153:54675 -> 192.168.122.165:771
@@ -493,7 +485,7 @@ Aşağıdaki gibi bir sonuç beklenmektedir.
 
 Sanırım bu kadar yeterli, yukarıdaki çıktıların altında belirttiğim syntax'ı incelerseniz kafanızda bir şeyler canlanacaktır.
 
-#### Log Analizi ve Yorumlama
+# Log Analizi ve Yorumlama
 
 Saldırı Tespit Sistemlerinin (IDS) en temel işlevlerinden biri, algıladığı şüpheli veya kötü niyetli ağ faaliyetlerini loglamaktır. Bu loglar, güvenlik analistleri için bir olayın ne zaman, nerede ve nasıl gerçekleştiğine dair kritik bilgiler sunar. Suricata, bu logları farklı ihtiyaçlara yönelik çeşitli formatlarda üretmektedir. Bu bölümde, projemiz kapsamında elde edilen temel log formatları incelenmiş ve yorumlanmıştır.
 
@@ -607,9 +599,3 @@ Eğer daha gelişmiş kural senaryolarınız var ise, İçindekiler bölümünü
 ##### 7.2. IPS (Engelleme) Modu Araştırması
 
 Projenin sadece IDS odaklı ve Suricata yaklaşımının sebebi, olabildiğince basit ve detaylandırmalardan kaçınarak sağlam bir temel oluşturmaktır. İlerleyen vakitlerde eğer zamanım kalırsa IPS için de kurallar tanımlamaya çalışacağım. Eğer sizinde geliştirme önerileriniz varsa ama nasıl yapacağınızı bilmiyorsanız, fikir danışmak, sohbet etmek aynı şehirdeysek çay içmek ya da aklınızdaki ne ise onun için bana [buradan](https://www.linkedin.com/in/alpulkegul/) ya da [buradan](https://www.instagram.com/alpulkegul/) ulaşabilirsiniz :) 
-
-#### Ekler (Ekran Görüntüleri, Konfigürasyon Dosyaları vb.)
-
-![Suricata Mimarisi.canvas](/Dökümantasyon/Suricata%20Mimarisi.canvas)
-=======
->>>>>>> fbecdc15fb13a3ae9d52c0204616a4a721fca80e
