@@ -1,8 +1,9 @@
 ### **İçindekiler**
 
 1. [Giriş](#1-gi̇ri̇ş)
-   1.1. [Projenin Amacı](#11-projenin-amacı)
-   1.2 [Projenin Önemi](12-projenin-önemi)
+
+1.1. [Projenin Amacı](#11-projenin-amacı)
+1.2 [Projenin Önemi](12-projenin-önemi)
 2. [Arka Plan ve Temel Kavramlar](#2-arkaplan-ve-temel-kavramlar)
    2.1. [Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?](#21-saldırı-tespit-sistemleri-ids-ve-saldırı-önleme-sistemleri-ips-nedir)
    2.2. [Snort Mimarisi](#22-snort-mimarisi)
