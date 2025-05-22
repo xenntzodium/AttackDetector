@@ -256,7 +256,7 @@ K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde 
 - Şimdi Kali makinemizin terminaline `ping 192.168.122.165` yazıp mint makinemize ping gönderebiliyor muyuz test edelim.
 - Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
 
-![[iletisimkontrol.gif]]
+![iletisimkontrol](/images/iletisimkontrol.gif)
 
 
 
@@ -272,7 +272,3 @@ vars:
 		# Biz temel düzeyde gittiğimiz için burada bir değişiklik yapmadık.
 ```
 
-
-
-=======
->>>>>>> 2485daf65cb7f63e864e7ccc58a26e84302f4890
