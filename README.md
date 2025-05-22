@@ -3,7 +3,83 @@
 ![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)
 ![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
 
+# SURICATA İNCELEMESİ ve SALDIRI SİMÜLASYONU
 
+## **Kurulum ve Çalıştırma**
+
+Bu projeyi yerel ortamınızda kurmak ve çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
+
+### **Ön Gereksinimler**
+
+* **Sanal Makine Yazılımı:** QEMU/KVM, VirtualBox veya VMware Workstation (Bu proje QEMU/KVM ile geliştirilmiştir)
+* **İşletim Sistemleri ISO'ları:**
+    * Linux Mint (Tercihen XFCE sürümü)
+    * Kali Linux
+* 8GB RAM ve 4 CPU çekirdeğine sahip bir ana makine üzerinde denendi, tercih sizindir.
+
+### **Adım Adım Kurulum**
+
+1.  **Sanal Makineleri Kurun:**
+    * QEMU/KVM (veya tercih ettiğiniz sanallaştırma yazılımı) üzerinde **Mint Linux** ve **Kali Linux** sanal makinelerini kurun.
+    * Aşağıdaki [3.1. Sanal Makine Konfigürasyonu](#31-sanal-makine-konfigürasyonu) bölümündeki kaynak atamalarına ve IP adreslerine uygun şekilde yapılandırın.
+    * Her iki sanal makinenin de [NAT ağ bağdaştırıcısına](#32-ağ-topolojisi) sahip olduğundan ve birbirleriyle iletişim kurabildiğinden emin olun.
+
+2.  **Bağımlılıkları Yükleyin (Mint Linux üzerinde):**
+
+    ```bash
+    sudo apt update && sudo apt upgrade
+    sudo apt install suricata
+    ```
+
+3.  **Suricata Temel Yapılandırması:**
+
+    * `suricata.yaml` dosyasını açın: `sudo mousepad /etc/suricata/suricata.yaml`
+    * `vars:` bölümündeki `HOME_NET` değerini kendi Mint Linux IP bloğunuza göre düzenleyin. Örneğin: `HOME_NET: "[192.168.122.0/24]"`
+    * `rule-files:` bölümündeki varsayılan Suricata kurallarını (örneğin `suricata.rules`) yorum satırına alın ve `local.rules` dosyasını ekleyin:
+        ```yaml
+        # - suricata.rules
+        - local.rules
+        ```
+    * `default-rule-path:` ayarının `rules` klasörüne işaret ettiğinden emin olun (örn: `/etc/suricata/rules`).
+
+4.  **Suricata Servisini Başlatın ve Kontrol Edin:**
+
+    ```bash
+    sudo systemctl enable suricata
+    sudo systemctl start suricata
+    sudo systemctl status suricata
+    sudo suricata -T -c /etc/suricata/suricata.yaml -i enp1s0 # Kendi arayüzünüzü kullanın
+    ```
+
+5.  **Özel Kuralları Ekleyin:**
+
+    * `/etc/suricata/rules/` dizini altına `local.rules` adında bir dosya oluşturun.
+    * Projede kullanılan ICMP ve Nmap SYN kurallarını bu dosyaya ekleyin. (Örnekler aşağıdaki kapsamlı raporumuzdan alınabilir.)
+
+    ```bash
+    echo 'alert icmp any any -> $HOME_NET any (msg:"PROJE TEST: ICMP Echo Request Tespit Edildi"; sid:2000001; rev:1;)' | sudo tee -a /etc/suricata/rules/local.rules
+    echo 'alert tcp any any -> $HOME_NET any (msg:"PROJE TEST2: Nmap SYN Tarama Tespit Edildi"; flags:S; sid:2000002; rev:1;)' | sudo tee -a /etc/suricata/rules/local.rules
+    ```
+
+6.  **Saldırı Senaryolarını Çalıştırın:**
+
+    * Kali Linux makinesinden hedef Mint Linux makinesine Nmap taramaları ve ping istekleri göndererek Suricata'nın tespitlerini gözlemleyin.
+    * Logları takip etmek için: `sudo tail -f /var/log/suricata/fast.log`
+
+## **Katkıda Bulunma**
+
+Bu projeyi daha da geliştirmek için katkılarınızı bekliyoruz! Her türlü geri bildirim, hata düzeltmesi veya yeni özellik önerisi değerlidir. Katkıda bulunmak isterseniz:
+
+1.  Bu depoyu (repository) Fork'layın.
+2.  Yeni bir özellik veya hata düzeltmesi için dal (branch) oluşturun: `git checkout -b feature/your-feature-name`
+3.  Değişikliklerinizi yapın ve commit edin.
+4.  Değişikliklerinizi kendi deponuza (fork'unuza) push edin.
+5.  Bir Pull Request (PR) açın ve değişikliklerinizi açıklayın.
+
+
+
+
+AŞAĞIDAKİ RAPORDA DAHA DETAYLI BİR İNCELEME MEVCUTTUR.
 
 ### **İçindekiler**
 - [Giriş](#1-gi̇ri̇ş)
