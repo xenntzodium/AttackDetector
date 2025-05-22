@@ -224,6 +224,7 @@ sudo systemctl status suricata # Servis durum kontrolü
 Çıktı aşağıdaki gibi olmalıdır.
 
 ![Servis%20Başlatması.png](/images/Servis%20Başlatması.png)
+<img src="images/Servis Başlatması.png" alt="Servis Başlatması" width="500">
 
 ###### NOT!
 
@@ -240,6 +241,7 @@ Böyle bir durumda `sudo systemctl status suricata` komutu bize enable döndürm
 `enable` durumundan şüphe ederseniz şu komutu çalıştırarak durumu kontrol edebilirsiniz: `ls /etc/rc*.d | grep suricata`
 
 ![kssuricata.png](/images/kssuricata.png)
+
 K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde çalışır. Türkçesi bu.) Yani enable olmuş. Güzel.
 
 ###### 4.1.2. `suricata.yaml` Dosyası Ayarları
