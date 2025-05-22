@@ -245,3 +245,30 @@ K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde 
 ###### 4.1.2. `suricata.yaml` Dosyası Ayarları
 
 `suricata.yaml` -> Suricata'nın konfigürasyon dosyası. Burada ağ ortamımıza göre özel ayarlamalar yapabiliyoruz. En kritik düzenlemelerden biri, ağ değişkenlerini tanımlamak.
+
+Önce `ip a` komutu ile hangi ip bloğunu kullanacağımızı öğrenmeliyiz. Bunu öğrenirken bir de iki bilgisayarın haberleşip haberleşemediğini test edelim.
+
+- Kali makinemizin terminaline ve mint makinemizin terminaline `ip a` komutunu girerek ip adreslerini öğrenebiliriz.
+- Kali makinemizin ip adresi: 192.168.122.153 
+- Mint: 192.168.122.165
+- Şimdi Kali makinemizin terminaline `ping 192.168.122.165` yazıp mint makinemize ping gönderebiliyor muyuz test edelim.
+- Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
+
+![[iletisimkontrol.gif]]
+
+
+
+Dosyayı açtığımız da ilk olarak Suricata'nın takip edeceği IP bloğunu Suricata'ya belirtiyoruz.
+
+```yaml
+vars:
+	address-groups:
+		HOME_NET: "[192.168.122.0/24]" # doldurduğumuz alan
+		EXTERNAL_NET: "any" # burası varsayılan olarak bu şekilde kalabilir.
+		# EXTERNAL_NET değişkeni kurum dışı IP adreslerini temsil eder.
+		# 0.0.0.0 - 255.255.255.255 -> Yani tüm ip adresleri
+		# Biz temel düzeyde gittiğimiz için burada bir değişiklik yapmadık.
+```
+
+
+
