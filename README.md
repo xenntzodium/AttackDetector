@@ -3,7 +3,7 @@
 ![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)
 ![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
 
-# **AttackDetector - Suricata İncelemesi ve Saldır Simülasyonu**
+# **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu**
   
   Bu proje, siber güvenlik saldırılarını tespit etmeye yönelik bir sistem üzerine kuruludur. Kaynak kıtlığı nedeniyle kaynak katkısı olarak hazırlanmıştır. İyi kodlamalar..
 
