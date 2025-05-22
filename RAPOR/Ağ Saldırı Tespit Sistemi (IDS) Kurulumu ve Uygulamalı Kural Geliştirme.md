@@ -472,7 +472,7 @@ nmap -sS -p 1-1000 192.168.122.165
 
 Aşağıdaki gibi bir sonuç beklenmektedir.
 
-![test-3.mp4](/images/test-3.mp4)
+![test-3.gif](/images/test-3.gif)
 
 #### 4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları
 
@@ -485,11 +485,11 @@ Aşağıdaki gibi bir sonuç beklenmektedir.
 
 Sanırım bu kadar yeterli, yukarıdaki çıktıların altında belirttiğim syntax'ı incelerseniz kafanızda bir şeyler canlanacaktır.
 
-# Log Analizi ve Yorumlama
+# 5. Log Analizi ve Yorumlama
 
 Saldırı Tespit Sistemlerinin (IDS) en temel işlevlerinden biri, algıladığı şüpheli veya kötü niyetli ağ faaliyetlerini loglamaktır. Bu loglar, güvenlik analistleri için bir olayın ne zaman, nerede ve nasıl gerçekleştiğine dair kritik bilgiler sunar. Suricata, bu logları farklı ihtiyaçlara yönelik çeşitli formatlarda üretmektedir. Bu bölümde, projemiz kapsamında elde edilen temel log formatları incelenmiş ve yorumlanmıştır.
 
-##### 5.1. `fast.log` Analizi
+## 5.1. `fast.log` Analizi
 
 `fast.log` dosyası, Suricata tarafından üretilen ve insan tarafından hızlıca okunabilecek, özet bilgi sağlayan bir uyarı (alert) logudur. Bu format, bir güvenlik olayının temel detaylarını anında gözden geçirmek için idealdir. Projemizdeki Nmap SYN taraması sonrası `/var/log/suricata/fast.log` dosyasında aşağıdaki benzeri bir çıktı elde edilmiştir:
 
@@ -517,11 +517,11 @@ Saldırı Tespit Sistemlerinin (IDS) en temel işlevlerinden biri, algıladığ�
 
 Bu `fast.log` çıktısı, Kali Linux'tan Mint Linux'a yönelik bir Nmap SYN port taramasının Suricata tarafından başarılı bir şekilde algılandığını ve kuralımızla eşleştiğini net bir şekilde ortaya koymaktadır.
 
-#### Sonuç ve Proje Kazanımları
+# 6. Sonuç ve Proje Kazanımları
 
 Gerçekleştirilen bu Suricata IDS projesinde, ağ güvenliği ve saldırı tespiti konularında geniş bir yelpazede bilgi ve pratik beceriler kazandırmıştır:
 
-##### 6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler
+## 6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler
 
 - **Ağ Saldırı Tespit Sistemleri (IDS) Kavramının Derinlemesine Anlaşılması:**
     
@@ -556,7 +556,7 @@ Gerçekleştirilen bu Suricata IDS projesinde, ağ güvenliği ve saldırı tesp
 
 ...
 
-##### **6.2. Projenin Başarıları**
+## **6.2. Projenin Başarıları**
 
 Bu proje, belirlenen hedeflere ulaşarak ve bir dizi zorluğun üstesinden gelerek önemli başarılar elde etmiştir. Temel başarılar aşağıda özetlenmiştir:
 
@@ -574,7 +574,7 @@ Bu proje, belirlenen hedeflere ulaşarak ve bir dizi zorluğun üstesinden geler
 
 ...
 
-##### 6.3. Uygulamalı Öğrenmenin Önemi
+## 6.3. Uygulamalı Öğrenmenin Önemi
 
 Bu proje, siber güvenlik gibi hızla gelişen ve dinamik bir alanda **uygulamalı öğrenmenin** vazgeçilmez rolünü bir kez daha kanıtlamıştır. Teorik bilgi, bir konunun temellerini anlamak için kritik olsa da, gerçek dünya senaryolarının simüle edildiği ve pratik problemlerle yüzleşildiği bir ortamda öğrenim, bilginin kalıcılığını ve uygulanabilirliğini artırır.
 
@@ -590,12 +590,12 @@ Bu proje özelinde, uygulamalı öğrenmenin sağladığı başlıca faydalar ş
 - **Özgüven ve Yeterlilik Duygusu:** Başlangıçtaki zorluklara rağmen, her bir aşamada elde edilen başarılar (örneğin, Nmap taramasının loglarda görünmesi), bana teknik yeteneklerime dair özgüven kazandırmış ve siber güvenlik alanında daha karmaşık projelere girişmek için cesaret vermiştir.
 
 
-#### Gelecek Çalışmalar ve Geliştirme Önerileri 
+# Gelecek Çalışmalar ve Geliştirme Önerileri 
 
-##### 7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri)
+## 7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri)
 
 Eğer daha gelişmiş kural senaryolarınız var ise, İçindekiler bölümünün Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar başlığının altındaki 4.2. Özel Kural Geliştirme ve Testler kısmına diğer kuralları ekleyebilirsiniz. Başlıklara, numaralandırma sistemine dikkat etmeniz dileğiyle. Lütfen Yardımcı Şablonlar kısmında bulunan şablonlardan hareket edin.
 
-##### 7.2. IPS (Engelleme) Modu Araştırması
+## 7.2. IPS (Engelleme) Modu Araştırması
 
 Projenin sadece IDS odaklı ve Suricata yaklaşımının sebebi, olabildiğince basit ve detaylandırmalardan kaçınarak sağlam bir temel oluşturmaktır. İlerleyen vakitlerde eğer zamanım kalırsa IPS için de kurallar tanımlamaya çalışacağım. Eğer sizinde geliştirme önerileriniz varsa ama nasıl yapacağınızı bilmiyorsanız, fikir danışmak, sohbet etmek aynı şehirdeysek çay içmek ya da aklınızdaki ne ise onun için bana [buradan](https://www.linkedin.com/in/alpulkegul/) ya da [buradan](https://www.instagram.com/alpulkegul/) ulaşabilirsiniz :) 
