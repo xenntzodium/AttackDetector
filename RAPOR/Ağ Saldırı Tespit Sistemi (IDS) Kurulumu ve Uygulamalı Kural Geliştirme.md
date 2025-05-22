@@ -1,6 +1,6 @@
 ### **İçindekiler**
 
-1. Giriş 
+1. Giriş
 	1.1  Projenin Amacı 
 	1.2 Projenin Önemi
 2. Arka Plan ve Temel Kavramlar 
