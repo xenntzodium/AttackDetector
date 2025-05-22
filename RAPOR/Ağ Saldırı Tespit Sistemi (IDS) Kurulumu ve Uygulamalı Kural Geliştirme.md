@@ -93,7 +93,7 @@ Bu kısımda bilmemiz gerekenler sırasıyla;
 
 DİKKAT: Suricata mimarisini aşağıdaki canvas üzerinde daha detaylı incelemek için, dosyayı indirip obsidian üzerinden görüntüleyebilirsiniz. 
 
-![[Pasted image 20250521234847.png]]
+![[https://raw.githubusercontent.com/xenntzodium/AttackDetector/refs/heads/main/images/Pasted%20image%2020250521234847.png]]
 
 [Dosyayı şu sayfadan sağda bulunan indirme kısmından indirebilirsiniz.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Suricata%20Mimarisi.canvas)
 
