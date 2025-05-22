@@ -6,21 +6,26 @@
 # **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu**
   
   Bu proje, siber güvenlik saldırılarını tespit etmeye yönelik bir sistem üzerine kuruludur. Kaynak kıtlığı nedeniyle kaynak katkısı olarak hazırlanmıştır. İyi kodlamalar..
+
 **Makineler Arası Haberleşme Kontrolü**
-[![İletişim Kontrolü GIF](images/iletisimkontrol.gif){width="250"}](images/iletisimkontrol.gif)
-_Tıklayarak büyütün_
+<a href="images/iletisimkontrol.gif" target="_blank">
+  <img src="images/iletisimkontrol.gif" alt="İletişim Kontrolü GIF" width="250">
+</a>
 
 **Suricata Servis Başlatma Durumu**
-[![Servis Başlatma GIF](images/Servis%20Başlatması.png){width="250"}](images/Servis%20Başlatması.png)
-_Tıklayarak büyütün_
+<a href="images/Servis%20Başlatması.png" target="_blank">
+  <img src="images/Servis%20Başlatması.png" alt="Servis Başlatma GIF" width="250">
+</a>
 
 **ICMP (Ping) Kural Testi**
-[![ICMP Test GIF](images/test-2.gif){width="250"}](images/test-2.gif)
-_Tıklayarak büyütün_
+<a href="images/test-2.gif" target="_blank">
+  <img src="images/test-2.gif" alt="ICMP Test GIF" width="250">
+</a>
 
 **Nmap SYN Tarama Tespiti**
-[![Nmap Tespit GIF](images/test-3.gif){width="250"}](images/test-3.gif)
-_Tıklayarak büyütün_
+<a href="images/test-3.gif" target="_blank">
+  <img src="images/test-3.gif" alt="Nmap Tespit GIF" width="250">
+</a>
 
 
 ## **Kurulum ve Çalıştırma**
