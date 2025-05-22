@@ -1,7 +1,14 @@
+![Project Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)
+![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
+
+
+
 ### **İçindekiler**
 - [Giriş](#1-gi̇ri̇ş)
 	- [Projenin Amacı](#11-projenin-amacı)
-	- [Projenin Önemi](12-projenin-önemi)
+	- [Projenin Önemi](#12-projenin-önemi)
 - [Arka Plan ve Temel Kavramlar](#2-arkaplan-ve-temel-kavramlar)
 	- [Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?](#21-saldırı-tespit-sistemleri-ids-ve-saldırı-önleme-sistemleri-ips-nedir)
 	- [Snort Mimarisi](#22-snort-mimarisi)
