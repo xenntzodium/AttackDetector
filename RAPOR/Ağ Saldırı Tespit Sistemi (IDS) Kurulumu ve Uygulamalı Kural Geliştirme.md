@@ -83,11 +83,11 @@ Bu kısımda bilmemiz gerekenler sırasıyla;
 
 ##### 2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/IDS%20ve%20IPS%20Nedir%3F.md)
 
 ##### 2.2. Snort Mimarisi
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Snort%20Mimarisi.md)
 
 ##### 2.3. Suricata Mimarisi
 
@@ -95,7 +95,7 @@ DİKKAT: Suricata mimarisini aşağıdaki canvas üzerinde daha detaylı incelem
 
 ![[Pasted image 20250521234847.png]]
 
-Dosyayı şu sayfadan sağda bulunan indirme kısmından indirebilirsiniz.
+[Dosyayı şu sayfadan sağda bulunan indirme kısmından indirebilirsiniz.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Suricata%20Mimarisi.canvas)
 
 Suricata'yı güçlü kılan bazı temel özellikler şunlardır:
 
@@ -108,7 +108,7 @@ Suricata'yı güçlü kılan bazı temel özellikler şunlardır:
 
 ##### 2.3. Saldırı Senaryoları ve Nmap
 
-Konu hakkında detaylı bilgi için buraya tıklayın.
+[Konu hakkında detaylı bilgi için buraya tıklayın.](https://github.com/xenntzodium/AttackDetector/blob/main/D%C3%B6k%C3%BCmantasyon/Sald%C4%B1r%C4%B1%20Senaryolar%C4%B1%20-%20NMAP.md)
 
 NOT: Bu bölümde açıklanan kavramlar ve araçlar, projemizin ilerleyen adımlarında Suricata üzerinde geliştirilen kuralların ve gerçekleştirilen saldırı simülasyonlarının temelini oluşturmuştur. Tabiki konular bunlarla sınırlı değil, daha öğrenmemiz gereken çok şey var. Fakat şimdilik yukarıdaki bilgilerin kafamızda bir şeyler canlandırması yeterli. 
 
