@@ -6,6 +6,22 @@
 # **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu**
   
   Bu proje, siber güvenlik saldırılarını tespit etmeye yönelik bir sistem üzerine kuruludur. Kaynak kıtlığı nedeniyle kaynak katkısı olarak hazırlanmıştır. İyi kodlamalar..
+**Makineler Arası Haberleşme Kontrolü**
+[![İletişim Kontrolü GIF](images/iletisimkontrol.gif){width="250"}](images/iletisimkontrol.gif)
+_Tıklayarak büyütün_
+
+**Suricata Servis Başlatma Durumu**
+[![Servis Başlatma GIF](images/Servis%20Başlatması.png){width="250"}](images/Servis%20Başlatması.png)
+_Tıklayarak büyütün_
+
+**ICMP (Ping) Kural Testi**
+[![ICMP Test GIF](images/test-2.gif){width="250"}](images/test-2.gif)
+_Tıklayarak büyütün_
+
+**Nmap SYN Tarama Tespiti**
+[![Nmap Tespit GIF](images/test-3.gif){width="250"}](images/test-3.gif)
+_Tıklayarak büyütün_
+
 
 ## **Kurulum ve Çalıştırma**
 
