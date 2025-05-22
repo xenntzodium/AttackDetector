@@ -1,0 +1,1 @@
+Proje hakkında geniş bilgiye sahip olmak için RAPOR kısmını inceleyebilirsiniz.
