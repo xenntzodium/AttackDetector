@@ -170,7 +170,7 @@ Kurulu yazılımlar:
 
 ##### 3.2. Ağ Topolojisi 
 
-![[Ağ Topolojisi.png]]
+![Ağ%20Topolojisi.png](/images/Ağ%20Topolojisi.png)
 
 ##### 3.3. Kullanılan Yazılımlar ve Versiyonları
 
@@ -223,23 +223,23 @@ sudo systemctl status suricata # Servis durum kontrolü
 
 Çıktı aşağıdaki gibi olmalıdır.
 
-![[Servis Başlatması.png]]
+![Servis%20Başlatması.png](/images/Servis%20Başlatması.png)
 
 ###### NOT!
 
 Bazı durumlar da aşağıdaki gibi `sudo systemctl enable suricata` `suricata.service is not a native service, redirecting to systemd-sysv-install.` şeklinde bir çıktı verdiğini görürüz. 
 
-![[executingsystemd.png]]
+![executingsystemd.png](/images/executingsystemd.png)
 
 Hata değildir, yalnızca `systemctl enable suricata` komutunun `/usr/lib/systemd/systemd-sysv-install enable suricata` komutuna yönlendirildiğini söylüyor. Suricata bazı dağıtımlarda (genelde debian sistemlerinde) native `systemd` servisi olarak değil eski yöntem olan `/etc/init.d/suricata` yoluyla çalışıyor. Yani aslında enable komutu başarılı olmuştur.
 
 Böyle bir durumda `sudo systemctl status suricata` komutu bize enable döndürmeyecektir. 
 
-![[enablepr.png]]
+![enablepr.png](/images/enablepr.png)
 
 `enable` durumundan şüphe ederseniz şu komutu çalıştırarak durumu kontrol edebilirsiniz: `ls /etc/rc*.d | grep suricata`
 
-![[kssuricata.png]]
+![kssuricata.png](/images/kssuricata.png)
 K -> Kill S -> Start (shutdown ya da reboot anında servis durur onun haricinde çalışır. Türkçesi bu.) Yani enable olmuş. Güzel.
 
 ###### 4.1.2. `suricata.yaml` Dosyası Ayarları
