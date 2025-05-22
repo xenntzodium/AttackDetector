@@ -1,44 +1,44 @@
 ### **İçindekiler**
 
-1. Giriş 
-	1.1  Projenin Amacı 
-	1.2 Projenin Önemi
-2. Arka Plan ve Temel Kavramlar 
-	2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir? 
-	2.2. Snort Mimarisi
-	2.3. Suricata Mimarisi 
-	2.4. Saldırı Senaryoları ve Nmap
-3. Proje Ortamı ve Kullanılan Araçlar 
-	3.1. Sanal Makine Konfigürasyonu 
-		3.1.1. Mint Linux (Hedef/IDS Makinesi) 
-		3.1.2. Kali Linux (Saldırgan Makinesi) 
-	3.2. Ağ Topolojisi 
-	3.3. Kullanılan Yazılımlar ve Versiyonları
-4. Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
-	4.0. Makinelerin haberleşme kontrolü
-	4.1. Suricata Kurulumu ve Temel Konfigürasyon 
-		4.1.1. Kurulum Süreci 
-		4.1.2. `suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)
-		4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü) 
-	4.2. Özel Kural Geliştirme ve Testler 
-		4.2.1. ICMP (Ping) Tespit Kuralı 
-			4.2.1.1. Kuralın Tanımı
-			4.2.1.2. Uygulama ve Test Süreci 
-			4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
-		4.2.2. Nmap SYN Port Tarama Tespit Kuralı 
-			4.2.2.1. Kuralın Tanımı
-			4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması) 
-			4.2.2.3. Uygulama ve Test Süreci 
-			4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları 
-5. Log Analizi ve Yorumlama 
-	5.1. `fast.log` Analizi 
-6. Sonuç ve Proje Kazanımları 
-	6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler 
-	6.2. Projenin Başarıları 
-	6.3. Uygulamalı Öğrenmenin Önemi
-7. Gelecek Çalışmalar ve Geliştirme Önerileri 
-	7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri) 
-	7.2. IPS (Engelleme) Modu Araştırması
+1. [Giriş](#1-gi̇ri̇ş)
+	1.1 [Projenin Amacı]
+	1.2 [Projenin Önemi]
+2. [Arka Plan ve Temel Kavramlar]
+	2.1. [Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?]
+	2.2. [Snort Mimarisi]
+	2.3. [Suricata Mimarisi]
+	2.4. [Saldırı Senaryoları ve Nmap]
+3. [Proje Ortamı ve Kullanılan Araçlar]
+	3.1. [Sanal Makine Konfigürasyonu]
+		3.1.1. [Mint Linux (Hedef/IDS Makinesi)]
+		3.1.2. [Kali Linux (Saldırgan Makinesi)]
+	3.2. [Ağ Topolojisi]
+	3.3. [Kullanılan Yazılımlar ve Versiyonları]
+4. [Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar]
+	4.0. [Makinelerin haberleşme kontrolü]
+	4.1. [Suricata Kurulumu ve Temel Konfigürasyon]
+		4.1.1. [Kurulum Süreci]
+		4.1.2. [`suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)]
+		4.1.3. [Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü)]
+	4.2. [Özel Kural Geliştirme ve Testler]
+		4.2.1. [ICMP (Ping) Tespit Kuralı]
+			4.2.1.1. [Kuralın Tanımı]
+			4.2.1.2. [Uygulama ve Test Süreci]
+			4.2.1.3. [Elde Edilen Log Çıktıları ve Yorumları]
+		4.2.2. [Nmap SYN Port Tarama Tespit Kuralı]
+			4.2.2.1. [Kuralın Tanımı]
+			4.2.2.2. [Saldırı Senaryosu (Kali'den Nmap Taraması)]
+			4.2.2.3. [Uygulama ve Test Süreci]
+			4.2.2.4. [Elde Edilen Log Çıktıları ve Yorumları]
+5. [Log Analizi ve Yorumlama]
+	5.1. [`fast.log` Analizi]
+6. [Sonuç ve Proje Kazanımları]
+	6.1. [Projeden Elde Edilen Temel Bilgi ve Beceriler]
+	6.2. [Projenin Başarıları]
+	6.3. [Uygulamalı Öğrenmenin Önemi]
+7. [Gelecek Çalışmalar ve Geliştirme Önerileri]
+	7.1. [Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri)]
+	7.2. [IPS (Engelleme) Modu Araştırması]
 
 ---
 # 1. GİRİŞ
