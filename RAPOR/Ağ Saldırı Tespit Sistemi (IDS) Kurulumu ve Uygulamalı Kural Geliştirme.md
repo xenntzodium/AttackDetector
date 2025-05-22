@@ -1,44 +1,43 @@
 ### **İçindekiler**
-
-1. Giriş
-	1.1  Projenin Amacı 
-	1.2 Projenin Önemi
-2. Arka Plan ve Temel Kavramlar 
-	2.1. Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir? 
-	2.2. Snort Mimarisi
-	2.3. Suricata Mimarisi 
-	2.4. Saldırı Senaryoları ve Nmap
-3. Proje Ortamı ve Kullanılan Araçlar 
-	3.1. Sanal Makine Konfigürasyonu 
-		3.1.1. Mint Linux (Hedef/IDS Makinesi) 
-		3.1.2. Kali Linux (Saldırgan Makinesi) 
-	3.2. Ağ Topolojisi 
-	3.3. Kullanılan Yazılımlar ve Versiyonları
-4. Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar 
-	4.0. Makinelerin haberleşme kontrolü
-	4.1. Suricata Kurulumu ve Temel Konfigürasyon 
-		4.1.1. Kurulum Süreci 
-		4.1.2. `suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)
-		4.1.3. Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü) 
-	4.2. Özel Kural Geliştirme ve Testler 
-		4.2.1. ICMP (Ping) Tespit Kuralı 
-			4.2.1.1. Kuralın Tanımı
-			4.2.1.2. Uygulama ve Test Süreci 
-			4.2.1.3. Elde Edilen Log Çıktıları ve Yorumları 
-		4.2.2. Nmap SYN Port Tarama Tespit Kuralı 
-			4.2.2.1. Kuralın Tanımı
-			4.2.2.2. Saldırı Senaryosu (Kali'den Nmap Taraması) 
-			4.2.2.3. Uygulama ve Test Süreci 
-			4.2.2.4. Elde Edilen Log Çıktıları ve Yorumları 
-5. Log Analizi ve Yorumlama 
-	5.1. `fast.log` Analizi 
-6. Sonuç ve Proje Kazanımları 
-	6.1. Projeden Elde Edilen Temel Bilgi ve Beceriler 
-	6.2. Projenin Başarıları 
-	6.3. Uygulamalı Öğrenmenin Önemi
-7. Gelecek Çalışmalar ve Geliştirme Önerileri 
-	7.1. Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri) 
-	7.2. IPS (Engelleme) Modu Araştırması
+- [Giriş](#1-gi̇ri̇ş)
+	- [Projenin Amacı](#11-projenin-amacı)
+	- [Projenin Önemi](12-projenin-önemi)
+- [Arka Plan ve Temel Kavramlar](#2-arkaplan-ve-temel-kavramlar)
+	- [Saldırı Tespit Sistemleri (IDS) ve Saldırı Önleme Sistemleri (IPS) Nedir?](#21-saldırı-tespit-sistemleri-ids-ve-saldırı-önleme-sistemleri-ips-nedir)
+	- [Snort Mimarisi](#22-snort-mimarisi)
+	- [Suricata Mimarisi](#23-suricata-mimarisi)
+	- [Saldırı Senaryoları ve Nmap](#24-saldırı-senaryoları-ve-nmap)
+- [Proje Ortamı ve Kullanılan Araçlar](#3-proje-ortamı-ve-kullanılan-araçlar)
+	- [Sanal Makine Konfigürasyonu](#31-sanal-makine-konfigürasyonu)
+		- [Mint Linux (Hedef/IDS Makinesi)](#311-mint-linux-hedefids-makinesi)
+		- [Kali Linux (Saldırgan Makinesi)](#312-kali-linux-saldırgan-makinesi)
+	- [Ağ Topolojisi](#32-ağ-topolojisi)
+	- [Kullanılan Yazılımlar ve Versiyonları](#33-kullanılan-yazılımlar-ve-versiyonları)
+- [Gerçekleştirilen Çalışmalar ve Uygulamalı Adımlar](#4-gerçekleştirilen-çalışmalar-ve-uygulamalı-adımlar)
+	- [Makinelerin haberleşme kontrolü](#40-makinelerin-haberleşme-kontrolü)
+	- [Suricata Kurulumu ve Temel Konfigürasyon](#41-suricata-kurulumu-ve-temel-konfigürasyon)
+		- [Kurulum Süreci](#411-kurulum-süreci)
+		- [`suricata.yaml` Dosyası Ayarları (Özellikle `$HOME_NET` tanımı)](#412-suricatayaml-dosyası-ayarları)
+		- [Servis Yönetimi (Başlatma, Durdurma, Durum Kontrolü)](#413-servis-yönetimi-başlatma-durdurma-durum-kontrolü)
+	- [Özel Kural Geliştirme ve Testler](#42-özel-kural-geliştirme-ve-testler)
+		- [ICMP (Ping) Tespit Kuralı](#421-icmp-ping-tespit-kuralı)
+			- [Kuralın Tanımı](#4211-kuralın-tanımı)
+			- [Uygulama ve Test Süreci](#4212-uygulama-ve-test-süreci)
+			- [Elde Edilen Log Çıktıları ve Yorumları](#4213-elde-edilen-log-çıktıları-ve-yorumları)
+		- [Nmap SYN Port Tarama Tespit Kuralı](#422-nmap-syn-port-tarama-tespit-kuralı)
+			- [Kuralın Tanımı](#422-nmap-syn-port-tarama-tespit-kuralı)
+			- [Saldırı Senaryosu (Kali'den Nmap Taraması)](#4222-saldırı-senaryosu-kaliden-nmap-taraması)
+			- [Uygulama ve Test Süreci](#4223-uygulama-ve-test-süreci)
+			- [Elde Edilen Log Çıktıları ve Yorumları](#4224-elde-edilen-log-çıktıları-ve-yorumları)
+- [Log Analizi ve Yorumlama](#5-log-analizi-ve-yorumlama)
+	- [`fast.log` Analizi](#51-fastlog-analizi)
+- [Sonuç ve Proje Kazanımları](#6-sonuç-ve-proje-kazanımları)
+	- [Projeden Elde Edilen Temel Bilgi ve Beceriler](#61-projeden-elde-edilen-temel-bilgi-ve-beceriler)
+	- [Projenin Başarıları](#62-projenin-başarıları)
+	- [Uygulamalı Öğrenmenin Önemi](#63-uygulamalı-öğrenmenin-önemi)
+- [Gelecek Çalışmalar ve Geliştirme Önerileri](#gelecek-çalışmalar-ve-geliştirme-önerileri)
+	- [Daha Gelişmiş Kural Senaryoları (HTTP, DNS, İç Ağ Hareketleri)](#71-daha-gelişmiş-kural-senaryoları-http-dns-i̇ç-ağ-hareketleri)
+	- [IPS (Engelleme) Modu Araştırması](#72-ips-engelleme-modu-araştırması)
 
 ---
 # 1. GİRİŞ
@@ -198,7 +197,7 @@ Suricata IDS'in proje ortamına entegrasyonu, sistemin temel yapılandırmasıyl
 - Şimdi Kali makinemizin terminaline `ping 192.168.122.165` yazıp mint makinemize ping gönderebiliyor muyuz test edelim.
 - Ardından aynı şekilde mint makinemizin terminaline `ping 192.168.122.153` yazarak testimizi yapalım. Sonuçlar aşağıdaki gibi olmalıdır.
 
-![[iletisimkontrol.gif]]
+![iletisimkontrol.gif](/images/iletisimkontrol.gif)
 ## 4.1. Suricata Kurulumu ve Temel Konfigürasyon
 
 Suricata IDS'in proje ortamına entegrasyonu, sistemin temel yapılandırmasıyla başlamıştır.
@@ -356,7 +355,7 @@ ping 192.168.122.165 # Kaliden Mint'e ping isteği
 
 Yakaladık fakat bir sorun var. Suricata'nın kendi içerisinde barındırdığı kural setleri olduğu için bizim oluşturduğumuz kural seti çalışmadı. Aslında çalıştı, fakat varsayılan olarak Suricata kural setleri daha önde çalışmış oldu. Bu durumu düzeltmek için `/etc/suricata/suricata.yaml` dosyasına girelim ve CTRL+F ile rule-files kısmında bir düzenleme yapalım.
 
-![[rule-files düzeltmesi.png]]
+![rule-files düzeltmesi.png](/image/rule-files%20düzeltmesi.png)
 
 Ne yaptık? `sudo mousepad /etc/suricata/suricata.yaml` ile suricata dosyasını açtık. CTRL+F ile rule-files kısmına gittik. 2187. satırda bulunan default-rule-path ve 2190. satırda bukunan - suricata.rules kısımlarını yorum satırına aldık. Dosyayı kaydedip, tekrar deneyelim.
 
