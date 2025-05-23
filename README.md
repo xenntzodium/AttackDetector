@@ -4,25 +4,6 @@
 ![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
 
 # **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu**
-  
-  Bu proje, siber güvenlik saldırılarını tespit etmeye yönelik bir sistem üzerine kuruludur. Kaynak kıtlığı nedeniyle kaynak katkısı olarak hazırlanmıştır. İyi kodlamalar..
-
-Süper, ikişerli yan yana gelecek şekilde düzenleyelim! Bunu yapmak için GitHub Markdown'da HTML tablolarını kullanmak en garanti ve düzenli yöntemdir. Her satırda iki görsel olacak şekilde bir tablo oluşturacağız.
-
-İşte README.md dosyanın badgelerden sonra gelecek ve görselleri ikişerli yan yana sıralayacak kod bloğu:
-
-Markdown
-
-[![Project Status](https://img.shields.io/badge/Status-Ongoing-blue)](https://github.com/xenntzodium/AttackDetector)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/xenntzodium/AttackDetector/blob/main/LICENSE)
-[![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)](https://github.com/xenntzodium/AttackDetector)
-[![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)](https://github.com/xenntzodium/AttackDetector)
-
----
-
-## Proje Görsel Örnekleri
-
-Projenin temel aşamalarını ve sonuçlarını gösteren kısa GIF'ler. Detayları görmek için **görsellere tıklayabilirsiniz.**
 
 <table>
   <tr>
