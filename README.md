@@ -3,7 +3,7 @@
 ![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)
 ![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)
 
-# **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu**
+# 🛡️ **AttackDetector | Suricata İncelemesi ve Saldırı Simülasyonu** 🛡️
 
 <table>
   <tr>
@@ -98,11 +98,9 @@ Bu projeyi yerel ortamınızda kurmak ve çalıştırmak için aşağıdaki adı
     * Kali Linux makinesinden hedef Mint Linux makinesine Nmap taramaları ve ping istekleri göndererek Suricata'nın tespitlerini gözlemleyin.
     * Logları takip etmek için: `sudo tail -f /var/log/suricata/fast.log`
 
-## **Katkıda Bulunma**
+## 🌟 **Katkıda Bulunma** 🌟
 
 Bu projeyi daha da geliştirmek için katkılarınızı bekliyoruz! Her türlü geri bildirim, hata düzeltmesi veya yeni özellik önerisi değerlidir. Katkıda bulunmak isterseniz:
-
-
 
 1.  Bu depoyu (repository) Fork'layın.
 2.  Yeni bir özellik veya hata düzeltmesi için dal (branch) oluşturun: `git checkout -b feature/your-feature-name`
