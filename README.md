@@ -7,25 +7,53 @@
   
   Bu proje, siber güvenlik saldırılarını tespit etmeye yönelik bir sistem üzerine kuruludur. Kaynak kıtlığı nedeniyle kaynak katkısı olarak hazırlanmıştır. İyi kodlamalar..
 
-**Makineler Arası Haberleşme Kontrolü**
-<a href="images/iletisimkontrol.gif" target="_blank">
-  <img src="images/iletisimkontrol.gif" alt="İletişim Kontrolü GIF" width="250">
-</a>
+Süper, ikişerli yan yana gelecek şekilde düzenleyelim! Bunu yapmak için GitHub Markdown'da HTML tablolarını kullanmak en garanti ve düzenli yöntemdir. Her satırda iki görsel olacak şekilde bir tablo oluşturacağız.
 
-**Suricata Servis Başlatma Durumu**
-<a href="images/Servis%20Başlatması.png" target="_blank">
-  <img src="images/Servis%20Başlatması.png" alt="Servis Başlatma GIF" width="250">
-</a>
+İşte README.md dosyanın badgelerden sonra gelecek ve görselleri ikişerli yan yana sıralayacak kod bloğu:
 
-**ICMP (Ping) Kural Testi**
-<a href="images/test-2.gif" target="_blank">
-  <img src="images/test-2.gif" alt="ICMP Test GIF" width="250">
-</a>
+Markdown
 
-**Nmap SYN Tarama Tespiti**
-<a href="images/test-3.gif" target="_blank">
-  <img src="images/test-3.gif" alt="Nmap Tespit GIF" width="250">
-</a>
+[![Project Status](https://img.shields.io/badge/Status-Ongoing-blue)](https://github.com/xenntzodium/AttackDetector)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/xenntzodium/AttackDetector/blob/main/LICENSE)
+[![Technologies](https://img.shields.io/badge/Technologies-Suricata%2C%20Nmap%2C%20QEMU%2FKVM%2C%20Linux%20Mint%2C%20Kali%20Linux-red)](https://github.com/xenntzodium/AttackDetector)
+[![Cybersecurity Project](https://img.shields.io/badge/Category-Cybersecurity%20Project-informational)](https://github.com/xenntzodium/AttackDetector)
+
+---
+
+## Proje Görsel Örnekleri
+
+Projenin temel aşamalarını ve sonuçlarını gösteren kısa GIF'ler. Detayları görmek için **görsellere tıklayabilirsiniz.**
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Makineler Arası Haberleşme Kontrolü</b><br>
+      <a href="images/iletisimkontrol.gif" target="_blank">
+        <img src="images/iletisimkontrol.gif" alt="İletişim Kontrolü GIF" width="280">
+      </a>
+    </td>
+    <td align="center">
+      <b>Suricata Servis Başlatma Durumu</b><br>
+      <a href="images/Servis%20Başlatması.png" target="_blank">
+        <img src="images/Servis%20Başlatması.png" alt="Servis Başlatma Görseli" width="280">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>ICMP (Ping) Kural Testi</b><br>
+      <a href="images/test-2.gif" target="_blank">
+        <img src="images/test-2.gif" alt="ICMP Test GIF" width="280">
+      </a>
+    </td>
+    <td align="center">
+      <b>Nmap SYN Tarama Tespiti</b><br>
+      <a href="images/test-3.gif" target="_blank">
+        <img src="images/test-3.gif" alt="Nmap Tespit GIF" width="280">
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 ## **Kurulum ve Çalıştırma**
