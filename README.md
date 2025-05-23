@@ -102,13 +102,17 @@ Bu projeyi yerel ortamınızda kurmak ve çalıştırmak için aşağıdaki adı
 
 Bu projeyi daha da geliştirmek için katkılarınızı bekliyoruz! Her türlü geri bildirim, hata düzeltmesi veya yeni özellik önerisi değerlidir. Katkıda bulunmak isterseniz:
 
+
+
 1.  Bu depoyu (repository) Fork'layın.
 2.  Yeni bir özellik veya hata düzeltmesi için dal (branch) oluşturun: `git checkout -b feature/your-feature-name`
 3.  Değişikliklerinizi yapın ve commit edin.
 4.  Değişikliklerinizi kendi deponuza (fork'unuza) push edin.
 5.  Bir Pull Request (PR) açın ve değişikliklerinizi açıklayın.
 
-
+&lt;p align="center" style="color:red; font-weight:bold;">
+LÜTFEN KURAL EKLEME KATKISINDA BULUNMAK İÇİN YARDIMCI ŞABLONLAR KLASÖRÜNE GİDİN ‼️‼️
+&lt;/p>
 
 
 AŞAĞIDAKİ RAPORDA DAHA DETAYLI BİR İNCELEME MEVCUTTUR.
