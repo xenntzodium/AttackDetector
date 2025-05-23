@@ -6,6 +6,8 @@
 # 🛡️ **AttackDetector** 🛡️
 👀 ⚔️ Suricata İncelemesi ve Saldırı Simülasyonu ⚔️ 👀
 
+Bu proje kaynak kıtlığından doğmuştur. Siber Güvenlik alanına özel, kaynak katkısı amacıyla hazırlanmıştır.
+
 <table>
   <tr>
     <td align="center">
