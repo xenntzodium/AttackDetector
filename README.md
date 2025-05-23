@@ -110,9 +110,8 @@ Bu projeyi daha da geliştirmek için katkılarınızı bekliyoruz! Her türlü 
 4.  Değişikliklerinizi kendi deponuza (fork'unuza) push edin.
 5.  Bir Pull Request (PR) açın ve değişikliklerinizi açıklayın.
 
-&lt;p align="center" style="color:red; font-weight:bold;">
-LÜTFEN KURAL EKLEME KATKISINDA BULUNMAK İÇİN YARDIMCI ŞABLONLAR KLASÖRÜNE GİDİN ‼️‼️
-&lt;/p>
+> [!CAUTION]
+> **LÜTFEN KURAL EKLEME KATKISINDA BULUNMAK İÇİN YARDIMCI ŞABLONLAR KLASÖRÜNE GİDİN VE [BU ŞABLONU](/Yardımcı%20Şablonlar/YENİ%20KURAL%20EKLEME%20ŞABLONU.md) KULLANIN** ‼️‼️ 
 
 
 AŞAĞIDAKİ RAPORDA DAHA DETAYLI BİR İNCELEME MEVCUTTUR.
